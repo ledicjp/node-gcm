@@ -150,6 +150,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Changelog
 
+**1.0.0**
+ * (**breaking change**)
+   Removed `Message#addDataWithObject` and `Message#addDataWithKeyValue`.
+   Both of these are covered by `Message#addData`, which should be used instead.
+
 **0.9.15**
  * Updated *Contributing* section in README
  * Rewrote `Sender#send`, so it returns the correct result ordered as expected, even after retrying.
